@@ -1,0 +1,32 @@
+<!-- navbar -->
+<nav class="navbar bg-body-tertiary ">
+    <form class="container-fluid justify-content-start ">
+        <button class="btn btn-outline-info me-2 " type="button" routerLink="">Employee Dashboard</button>
+      <button class="btn btn-outline-warning me-2" type="button" routerLink="employeeform">Employee Form</button>
+     
+    </form>
+  </nav>
+
+
+  <!-- table -->
+
+  <table class="table table-info table-striped mt-5">
+    
+    <thead>
+        <tr>
+            <th>Fieald ID</th>
+            <th>Name</th>
+            <th>Email</th>
+
+        </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let item of todos">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+
+       </tr>
+
+    </tbody>
+  </table>
